@@ -1,10 +1,15 @@
-# Troglobyte construct
+# Troglobyte Morse Code
 
 ## overview
 
 * * *
 
-Please add relevant information about your package.
+Morse code is a method used in telecommunication to encode text characters as
+standardized sequences of two different signal durations, called dots and dashes,
+or dits and dahs. Morse code is named after Samuel Morse, one of the inventors of
+the telegraph.
+
+This library will help with encoding and decoding the morse code.
 
 ## tooling
 
@@ -25,8 +30,8 @@ in your subprojects directory and include the dependency in your project.
 
 ```console
 [wrap-git]
-directory = troglo-construct
-url = https://github.com/troglobyte-stdlib/troglo-name-c.git
+directory = troglo-morsecode-c
+url = https://github.com/troglobyte-stdlib/troglo-morsecode-c.git
 revision = main
 
 [provide]
@@ -37,7 +42,7 @@ module = trog_dep
 The next step should be to add the package to your Meson project:
 
 ```meson
-trog_dep = dependency('troglo-construct')
+trog_dep = dependency('troglo-morsecode-c')
 
 executable('prog', 'main.c',
     dependencies : [trog_dep])
@@ -63,7 +68,7 @@ more please view the API documentation thanks.
 // gmail: <michaelbrockus@gmail.com>
 //
 #include <stdio.h>
-#include <troglobyte/package.h>
+#include <troglobyte/morsecode.h>
 
 
 //
