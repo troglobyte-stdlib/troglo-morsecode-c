@@ -1,4 +1,4 @@
-trog_lib = static_library('troglo-construct',
+trog_lib = static_library('troglo-morsecode-c',
     'package.c',
     include_directories: inc_dir)
 
